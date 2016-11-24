@@ -1,20 +1,87 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #000000;
 }
 
-a {
-  color: white;
+svg {
+  /*background: horizontal-gradient(135deg, #38ff5f, #000478);*/
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 50px 0px rgb(46, 6, 66);
 }
 
-.navbar {
-	background: #000000;
-	font-size: 15px;
-	border-radius: 4px;
-	border: 0px;
+#something {
+    height: 100vh;
+    width: 100vw;
 }
 
-.nav-item :hover {
-	color: black;
-	background: white;
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.text-stroke {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2.8px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  animation: dash 2.5s ease-in-out forwards;
+}
+
+.text-stroke:nth-child(2) {
+  animation-delay: .3s;
+}
+
+.text-stroke:nth-child(3) {
+  animation-delay: .9s;
+}
+
+.text-stroke-2 {
+  stroke: #c4faff;
+  animation-delay: 1.2s;
+}
+
+.text-stroke:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+.text-stroke:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.text-stroke:nth-child(7) {
+  animation-delay: 2s;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+.container {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }

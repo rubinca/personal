@@ -1,2 +1,59 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!-- <div class="container main">
+	<div class="row main-row">
+		<div class='name'>
+			<div class='first'>Caitlin</div>
+			<div class='last'>Rubin</div>
+		</div>
+		<div class="buttons">
+			<a class="btn btn-primary ftf top" href="http://www.forthefrosh.com/" role="button">ForTheFrosh</a>
+			<a class="btn btn-primary ftf" href="/resume" role="button">Resume</a>
+			<a class="btn btn-primary ftf bottom" href="/contact" role="button">Contact</a>
+		</div>
+	</div>
+</div> -->
+<div id="something"></div>
+<div id="main">
+  <svg viewbox="0 0 200 100">
+    <text text-anchor="start" x="10" y="35" class="text text-stroke" clip-path="url(#text1)">Caitlin</text>
+    <text text-anchor="start" x="10" y="55" class="text text-stroke" clip-path="url(#text2)">Ava</text>
+    <text text-anchor="start" x="10" y="75" class="text text-stroke" clip-path="url(#text3)">Rubin.</text>
+    <text text-anchor="start" x="10" y="35" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Caitlin</text>
+    <text text-anchor="start" x="10" y="55" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Ava</text>
+    <text text-anchor="start" x="10" y="75" class="text text-stroke text-stroke-2" clip-path="url(#text3)">Rubin.</text>
+    <defs>
+      <clipPath id="text1">
+        <text text-anchor="start" x="10" y="35" class="text">Caitlin</text>
+      </clipPath>
+      <clipPath id="text2">
+        <text text-anchor="start" x="10" y="55" class="text">Ava</text>
+      </clipPath>
+      <clipPath id="text3">
+        <text text-anchor="start" x="10" y="75" class="text">Rubin.</text>
+      </clipPath>
+    </defs
+    <!-- <svg> -->
+      <!-- <rect x="100" y="15" rx="10" ry="10" width="10" height="10" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" />
+      <text x="120" y="25">Hello</text>
+      <rect x="100" y="35" rx="10" ry="10" width="10" height="10" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" />
+      <rect x="100" y="55" rx="10" ry="10" width="10" height="10" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" />
+      <rect x="100" y="75" rx="10" ry="10" width="10" height="10" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" /> -->
+    <!-- </svg> -->
+  </svg>
+</div>
+
+
+
+
+
+
+<!-- <h1 class="animated bounce infinite">Hello</h> -->
+
+<script>
+var something = document.getElementById('something');
+var dimensions = something.getClientRects()[0];
+var pattern = Trianglify({
+    width: dimensions.width,
+    height: dimensions.height
+});
+something.appendChild(pattern.canvas());
+</script>
