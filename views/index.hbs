@@ -31,25 +31,28 @@
         <text text-anchor="start" x="10" y="75" class="text">Rubin.</text>
       </clipPath>
     </defs>
-    <a xlink:href="/contact">
+    <a href="/contact" class="under animated fadeInRight">
         <rect x="100" y="15" width="10" height="10"/>
         <text x="117" y="25" style="opacity:.5;font-size:15px">CONTACT</text>
     </a>
 
-    <a xlink:href="/q">
+    <a xlink:href="http://qai.herokuapp.com/" class="over1 animated fadeInRight">
         <rect x="100" y="35" width="10" height="10"/>
         <text x="117" y="45" style="opacity:.5;font-size:15px">Q</text>
     </a>
 
-    <a xlink:href="/contact">
+    <a xlink:href="https://sheltered-lowlands-53925.herokuapp.com/" class="over2 animated fadeInRight">
         <rect x="100" y="55" width="10" height="10"/>
         <text x="117" y="65" style="opacity:.5;font-size:15px">TEMPO</text>
     </a>
 
-    <a xlink:href="/contact">
+    <a xlink:href="http://www.forthefrosh.com/" class="over3 animated fadeInRight">
         <rect x="100" y="75" width="10" height="10"></rect>
         <text x="117" y="85" style="opacity:.5;font-size:15px">FTF</text>
     </a>
+    <text class="wasHidden1" x="99" y="95" visibility="hidden" style="font-size:5px;text-transform:none;opacity:.5">Project: Slack Bot</text>
+    <text class="wasHidden2" x="99" y="95" visibility="hidden" style="font-size:5px;text-transform:none;opacity:.5">Project: Universal Music Search App</text>
+    <text class="wasHidden3" x="99" y="95" visibility="hidden" style="font-size:5px;text-transform:none;opacity:.5">Project: For The Frosh</text>
   </svg>
 
 </div>
@@ -60,6 +63,35 @@
 
 
 <!-- <h1 class="animated bounce infinite">Hello</h> -->
+
+<script>
+  $(".over1").on("mouseover", function(e) {
+    document.querySelector(".wasHidden1").setAttribute("visibility", "inherit");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+  $(".over1").on("mouseout", function(e) {
+    document.querySelector(".wasHidden1").setAttribute("visibility", "hidden");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+
+  $(".over2").on("mouseover", function(e) {
+    document.querySelector(".wasHidden2").setAttribute("visibility", "inherit");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+  $(".over2").on("mouseout", function(e) {
+    document.querySelector(".wasHidden2").setAttribute("visibility", "hidden");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+
+  $(".over3").on("mouseover", function(e) {
+    document.querySelector(".wasHidden3").setAttribute("visibility", "inherit");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+  $(".over3").on("mouseout", function(e) {
+    document.querySelector(".wasHidden3").setAttribute("visibility", "hidden");
+    // document.querySelector(".over").setAttribute("style", "opacity:.7");
+  })
+</script>
 
 <script>
 var something = document.getElementById('something');

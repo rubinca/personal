@@ -1,2 +1,57 @@
-Phone: 5164574725
-Email: sas.upenn.edu
+<div id="something"></div>
+<div id="main">
+  <svg viewbox="0 0 200 70">
+    <!-- <rect x="8" y="11" width="11" height="11" style="stroke-width:.2"/> -->
+    <text x="10" y="20" xml:space="preserve" style="font-size:10px;text-transform: none;opacity:.5;stroke-width:.1"><tspan>P</tspan>  <tspan>(516) 457-4725</tspan></text>
+
+    <!-- <rect x="8" y="31" width="11" height="11" style="stroke-width:.2"/> -->
+    <text x="10" y="40" xml:space="preserve" style="font-size:10px;text-transform: none;opacity:.5"><tspan>E</tspan>  <tspan>rubinca@sas.upenn.edu</tspan></text>
+    <!-- <a xlink:href="/" style="stroke-width:0;fill:black">
+      <rect id="shape" x="90" y="53" rx="1" ry="1" width="25" height="9" style="stroke-width:.2;box-shadow: 0px 0px 50px 0px rgb(46, 6, 66);"/>
+      <div id="text">
+          <text class="spot" x="92" y="60" style="font-size:7px;text-transform: none;opacity:.5">HOME</text>
+      </div>
+    </a> -->
+    <!--start button, nothing above this is necessary -->
+    <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:60vh;left:45vw;box-shadow:0px 0px 10px 0px rgb(46, 6, 66)">
+        <rect id="shape" height="40" width="150" />
+        <div id="text" style="position:absolute;top:63%;left:43.3%;fill:black">
+          <a href="/images/Caitlin_Rubin_Resume.pdf" download><span class="spot" style="color:black"></span>Resume</a>
+        </div>
+      </svg>
+    </div>
+
+    <!--start button, nothing above this is necessary -->
+    <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:60vh;left:55vw;box-shadow:0px 0px 10px 0px rgb(46, 6, 66)">
+        <rect id="shape" height="40" width="150" />
+        <div id="text" style="position:absolute;top:63%;left:53.8%;fill:black">
+          <a href="/"><span class="spot" style="color:black"></span>Home</a>
+        </div>
+      </svg>
+    </div>
+
+  </svg>
+</div>
+
+
+
+
+
+<!-- <h1 class="animated bounce infinite">Hello</h> -->
+
+<script>
+var f = function(e) {
+  console.log("ready");
+  var something = document.getElementById('something');
+  var dimensions = something.getClientRects()[0];
+  var pattern = Trianglify({
+      width: dimensions.width,
+      height: dimensions.height
+  });
+  something.appendChild(pattern.canvas());
+}
+$("document").ready(f);
+
+</script>
